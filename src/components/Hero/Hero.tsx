@@ -1,6 +1,10 @@
 import React from "react";
 import Header from "../header/Header";
 import "./hero.css";
+import heroImage from "../../assets/hero_image.png";
+import heroBackgroundImage from "../../assets/hero_image_back.png";
+import heart from "../../assets/heart.png";
+import calories from "../../assets/calories.png";
 
 type Props = {};
 
@@ -11,7 +15,7 @@ const Hero = (props: Props) => {
         <Header />
         <div className="tag-line">
           <div></div>
-          <span>The best fitness club in your town.</span>
+          <span>The best fitness club in your town</span>
         </div>
 
         <div className="headline">
@@ -49,7 +53,30 @@ const Hero = (props: Props) => {
         </div>
       </div>
 
-      <div className="hero-right">right</div>
+      <div className="hero-right">
+        <button>Join Now</button>
+
+        <div className="heart-rate">
+          <img src={heart} alt="heart" />
+          <span>Heart Rate</span>
+          <span>116 bpm</span>
+        </div>
+
+        <img src={heroImage} className="hero-image" alt="hero" />
+        <img
+          src={heroBackgroundImage}
+          className="hero-background"
+          alt="hero background"
+        />
+
+        <div className="calories">
+          <img src={calories} alt="colories image" />
+          <div>
+            <span>Calories Burned</span>
+            <span>220 kcal</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

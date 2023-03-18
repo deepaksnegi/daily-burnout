@@ -20,7 +20,7 @@ const Hero = (props: Props) => {
 
         <div className="headline">
           <div className="headline-first">
-            <span className="stoke">Shape </span>
+            <span className="stroke">Shape </span>
             <span>Your</span>
           </div>
           <div className="headline-second">

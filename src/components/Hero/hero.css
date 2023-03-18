@@ -1,0 +1,91 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hero-left {
+  flex: 3;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.tag-line {
+  margin-top: 4rem;
+  border-radius: 4rem;
+  background-color: #363d42;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tag-line > span {
+  z-index: 2;
+}
+
+.tag-line > div {
+  position: absolute;
+  left: 1.1rem;
+  height: 75%;
+  width: 5.4rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  z-index: 1;
+}
+
+.headline {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+.headline-first {
+  margin-bottom: 1.5rem;
+}
+
+.progress-numbers {
+  display: flex;
+  gap: 2rem;
+}
+
+.progress-numbers div {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-numbers div span:first-child {
+  font-size: 2rem;
+  color: white;
+}
+
+.progress-numbers div span:last-child {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.hero-buttons :first-child {
+  color: white;
+  background-color: var(--orange);
+  width: 10rem;
+}
+
+.hero-buttons :last-child {
+  color: white;
+  background-color: transparent;
+  width: 10rem;
+  border: 2px solid var(--orange);
+}

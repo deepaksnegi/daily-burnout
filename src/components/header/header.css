@@ -30,3 +30,11 @@
   cursor: pointer;
   color: var(--orange);
 }
+
+.headline-info {
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 200;
+  letter-spacing: 1px;
+  width: 80%;
+}

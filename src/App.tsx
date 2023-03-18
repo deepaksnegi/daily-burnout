@@ -1,9 +1,10 @@
 import "./App.css";
+import Hero from "./components/header/Hero/Hero";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
+    <div className="app">
+      <Hero />
     </div>
   );
 }

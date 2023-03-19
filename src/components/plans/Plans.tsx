@@ -7,6 +7,9 @@ type Props = {};
 const Plans = (props: Props) => {
   return (
     <div className="plans-container">
+      <div className="blur plans-blur-f"></div>
+      <div className="blur plans-blur-s"></div>
+
       <div className="plans-header">
         <span className="stroke">Ready to start</span>
         <span>Your Journey </span>

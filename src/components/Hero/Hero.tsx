@@ -11,6 +11,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className="hero">
+      <div className="blur hero-blur"></div>
       <div className="hero-left">
         <Header />
         <div className="tag-line">

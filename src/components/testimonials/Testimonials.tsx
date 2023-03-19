@@ -21,7 +21,7 @@ const Testimonials = (props: Props) => {
   };
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="testimonials-left">
         <span>Testimonials</span>
         <span className="stroke">What they</span>

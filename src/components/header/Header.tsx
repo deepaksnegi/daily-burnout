@@ -7,20 +7,32 @@ type Props = {};
 const Header = (props: Props) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
+  const isMobileView = window.innerHeight <= 768;
+
   return (
     <div className="header">
       <div className="logo">Daily Burnout</div>
-      {!menuOpened ? (
+      {!menuOpened && isMobileView ? (
         <div className="menu-icon" onClick={() => setMenuOpened(true)}>
           <img src={menu} alt="menu-icon" />
         </div>
       ) : (
         <ul className="header-menus" onClick={() => setMenuOpened(false)}>
-          <li>Home</li>
-          <li>Programs</li>
-          <li>Why Us</li>
-          <li>Plans</li>
-          <li>Testimonials</li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#programs"> Programs </a>
+          </li>
+          <li>
+            <a href="#reasons"> Why Us </a>
+          </li>
+          <li>
+            <a href="#plans"> Plans </a>
+          </li>
+          <li>
+            <a href="#testimonials"> Testimonials </a>
+          </li>
         </ul>
       )}
     </div>

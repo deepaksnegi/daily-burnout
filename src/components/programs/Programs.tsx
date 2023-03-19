@@ -8,7 +8,7 @@ type Props = {};
 
 const Programs = (props: Props) => {
   return (
-    <div className="programs">
+    <div className="programs" id="programs">
       <div className="programs-header">
         <span className="stroke">Explore Our </span>
         <span>Programs</span>

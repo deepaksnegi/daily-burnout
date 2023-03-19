@@ -11,6 +11,9 @@
 
 .menu-icon {
   display: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--appColor);
 }
 
 .logo::first-letter {
@@ -30,9 +33,14 @@
   gap: 2rem;
 }
 
-.header-menus li:hover {
+.header-menus a:hover {
   cursor: pointer;
   color: var(--orange);
+}
+
+.header-menus a {
+  text-decoration: none;
+  color: white;
 }
 
 .headline-info {

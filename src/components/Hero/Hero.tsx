@@ -6,6 +6,7 @@ import heroBackgroundImage from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
+import NumberCounter from "number-counter";
 
 type Props = {};
 
@@ -41,14 +42,21 @@ const Hero = (props: Props) => {
 
         <div className="progress-numbers">
           <div>
-            <span>+ 140</span> <span>Expert Coaches</span>
+            <span>
+              <NumberCounter end={140} start={100} delay="4" prefix="+" />
+            </span>
+            <span>Expert Coaches</span>
           </div>
           <div>
-            <span>+ 978</span>
+            <span>
+              <NumberCounter end={978} start={700} delay="4" prefix="+" />
+            </span>
             <span>Members Joined</span>
           </div>
           <div>
-            <span>+ 50</span>
+            <span>
+              <NumberCounter end={50} start={30} delay="4" prefix="+" />
+            </span>
             <span>Fitness Programs</span>
           </div>
         </div>

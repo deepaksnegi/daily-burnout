@@ -6,7 +6,7 @@ type Props = {};
 
 const Plans = (props: Props) => {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <div className="blur plans-blur-f"></div>
       <div className="blur plans-blur-s"></div>
 

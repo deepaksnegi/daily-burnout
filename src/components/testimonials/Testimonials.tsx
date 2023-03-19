@@ -3,6 +3,7 @@ import "./testimonials.css";
 import { testimonialsData } from "../../assets/data/testimonialsData.js";
 import leftArrow from "../../assets/leftArrow.png";
 import rightArrow from "../../assets/rightArrow.png";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -25,19 +26,44 @@ const Testimonials = (props: Props) => {
         <span>Testimonials</span>
         <span className="stroke">What they</span>
         <span>say about us</span>
-        <span className="review">{review}</span>
+        <motion.span
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+          transition={{ type: "spring", duration: 2 }}
+          key={selectedIndex}
+          className="review"
+        >
+          {review}
+        </motion.span>
         <span>
           <span>{name}</span> -{status}
         </span>
       </div>
       <div className="testimonials-right">
-        <div></div>
-        <div></div>
-        <img src={image} alt={name} />
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 2 }}
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 2 }}
+        ></motion.div>
+        <motion.img
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ type: "spring", duration: 2 }}
+          key={selectedIndex}
+          src={image}
+          alt={name}
+        />
         <div className="change-testimonials">
           <img
             src={leftArrow}
-            alt="previou"
+            alt="previous"
             onClick={() => handleChangeTestimonial(-1)}
           />
           <img

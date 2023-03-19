@@ -5,6 +5,7 @@ import heroImage from "../../assets/hero_image.png";
 import heroBackgroundImage from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -15,7 +16,11 @@ const Hero = (props: Props) => {
       <div className="hero-left">
         <Header />
         <div className="tag-line">
-          <div></div>
+          <motion.div
+            transition={{ type: "tween", duration: 3 }}
+            initial={{ left: "238px" }}
+            whileInView={{ left: "1.1rem" }}
+          ></motion.div>
           <span>The best fitness club in your town</span>
         </div>
 
@@ -57,26 +62,39 @@ const Hero = (props: Props) => {
       <div className="hero-right">
         <button>Join Now</button>
 
-        <div className="heart-rate">
+        <motion.div
+          className="heart-rate"
+          transition={{ type: "spring", duration: 3 }}
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "4rem" }}
+        >
           <img src={heart} alt="heart" />
           <span>Heart Rate</span>
           <span>116 bpm</span>
-        </div>
+        </motion.div>
 
         <img src={heroImage} className="hero-image" alt="hero" />
-        <img
+        <motion.img
+          transition={{ type: "spring", duration: 3 }}
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "20rem" }}
           src={heroBackgroundImage}
           className="hero-background"
           alt="hero background"
         />
 
-        <div className="calories">
-          <img src={calories} alt="colories image" />
+        <motion.div
+          className="calories"
+          transition={{ type: "spring", duration: 3 }}
+          initial={{ right: "37rem" }}
+          whileInView={{ right: "28rem" }}
+        >
+          <img src={calories} alt="calories image" />
           <div>
             <span>Calories Burned</span>
             <span>220 kcal</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

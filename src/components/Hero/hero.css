@@ -179,3 +179,72 @@
   color: white;
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .tag-line {
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+  }
+
+  .headline {
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  .headline-info {
+    font-size: small;
+    width: 100%;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  .progress-numbers div span:first-child {
+    font-size: large;
+  }
+
+  .progress-numbers div span:last-child {
+    font-size: small;
+  }
+
+  .hero-right {
+    position: relative;
+    background: none;
+  }
+
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .calories {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  }
+
+  .calories img {
+    width: 2rem;
+  }
+
+  .calories div :nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+  }
+
+  .hero-background {
+    width: 15rem;
+    top: 0;
+    left: 2rem;
+  }
+}

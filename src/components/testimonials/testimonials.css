@@ -1,0 +1,76 @@
+.testimonials {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.testimonials-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.testimonials-left :nth-child(1) {
+  font-weight: bold;
+  color: var(--orange);
+}
+.testimonials-left :nth-child(2),
+.testimonials-left :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.review {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.testimonials-right {
+  flex: 1;
+  position: relative;
+}
+
+.testimonials-right > :nth-child(1) {
+  position: absolute;
+  top: 0.9rem;
+  right: 9rem;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid var(--orange);
+}
+
+.testimonials-right > :nth-child(2) {
+  position: absolute;
+  top: 4rem;
+  right: 7rem;
+  width: 17rem;
+  height: 19rem;
+  background: var(--planCard);
+}
+
+.testimonials-right > img {
+  position: absolute;
+  top: 2rem;
+  right: 8rem;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.change-testimonials {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+
+.change-testimonials > img {
+  width: 1.5rem;
+  cursor: pointer;
+}

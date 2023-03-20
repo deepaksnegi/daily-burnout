@@ -7,7 +7,7 @@ type Props = {};
 const Header = (props: Props) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
-  const isMobileView = window.innerHeight <= 768;
+  const isMobileView = window.innerWidth <= 768;
 
   return (
     <div className="header">

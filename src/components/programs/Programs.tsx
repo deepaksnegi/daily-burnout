@@ -18,7 +18,7 @@ const Programs = (props: Props) => {
       <div className="program-categories">
         {programsData.map((program) => (
           <div className="category" key={program.heading}>
-            <img src={program.image} alt={program.heading} />
+            <img src={program.image} alt={program.heading} loading="lazy" />
             <span>{program.heading}</span>
             <span>{program.details}</span>
             <div className="join-now">

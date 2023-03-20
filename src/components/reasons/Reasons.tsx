@@ -15,10 +15,10 @@ const Reasons = (props: Props) => {
   return (
     <div className="reasons" id="reasons">
       <div className="reasons-left">
-        <img src={image1} alt="body building" />
-        <img src={image2} alt="body building" />
-        <img src={image3} alt="body building" />
-        <img src={image4} alt="body building" />
+        <img src={image1} loading="lazy" alt="body building" />
+        <img src={image2} loading="lazy" alt="body building" />
+        <img src={image3} loading="lazy" alt="body building" />
+        <img src={image4} loading="lazy" alt="body building" />
       </div>
       <div className="reasons-right">
         <span>Some Reasons</span>

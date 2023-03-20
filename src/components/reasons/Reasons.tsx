@@ -30,11 +30,11 @@ const Reasons = (props: Props) => {
         <div className="details">
           <div>
             <img src={tick} alt="tick"></img>
-            <span>Over 140+ Expert Coachs</span>
+            <span>Over 140+ Expert Coaches</span>
           </div>
           <div>
             <img src={tick} alt="tick" />
-            <span>Train Smarter and Faster than beforer</span>
+            <span>Train Smarter and Faster than before</span>
           </div>
           <div>
             <img src={tick} alt="tick" />

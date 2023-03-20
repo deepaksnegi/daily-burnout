@@ -32,7 +32,7 @@ const Plans = (props: Props) => {
               ))}
             </div>
             <div>
-              <span>See more benifits </span>
+              <span>See more benefits </span>
             </div>
 
             <button>Join Now</button>

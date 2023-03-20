@@ -19,9 +19,9 @@ const Plans = (props: Props) => {
       <div className="plans">
         {plansData.map((plan) => (
           <div className="plan" key={plan.name}>
-            {plan.icon}
+            <img src={plan.icon} alt={plan.name} />
             <span>{plan.name}</span>
-            <span>${plan.price}</span>
+            <span>$ {plan.price}</span>
 
             <div className="features">
               {plan.features.map((feature) => (

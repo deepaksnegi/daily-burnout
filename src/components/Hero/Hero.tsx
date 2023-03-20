@@ -6,7 +6,7 @@ import heroBackgroundImage from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
-import NumberCounter from "number-counter";
+import CountUp from "react-countup";
 
 type Props = {};
 
@@ -43,19 +43,19 @@ const Hero = (props: Props) => {
         <div className="progress-numbers">
           <div>
             <span>
-              <NumberCounter end={140} start={100} delay="4" prefix="+" />
+              <CountUp end={140} start={100} duration={4} prefix="+" />
             </span>
             <span>Expert Coaches</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={978} start={700} delay="4" prefix="+" />
+              <CountUp end={978} start={700} duration={4} prefix="+" />
             </span>
             <span>Members Joined</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={50} start={30} delay="4" prefix="+" />
+              <CountUp end={50} start={30} duration={4} prefix="+" />
             </span>
             <span>Fitness Programs</span>
           </div>

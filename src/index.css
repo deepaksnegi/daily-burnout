@@ -14,6 +14,10 @@
   --appColor: #3c3f45;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }

@@ -45,6 +45,11 @@
   line-height: 25px;
 }
 
+.category > img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .join-now {
   display: flex;
   gap: 2rem;

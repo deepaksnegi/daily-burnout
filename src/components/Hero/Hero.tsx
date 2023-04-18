@@ -76,7 +76,13 @@ const Hero = (props: Props) => {
           initial={{ right: "-1rem" }}
           whileInView={{ right: "4rem" }}
         >
-          <img src={heart} alt="heart" />
+          <motion.img
+            src={heart}
+            alt="heart"
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.5 }}
+            transition={{ repeat: Infinity, repeatDelay: 0.3 }}
+          />
           <span>Heart Rate</span>
           <span>116 bpm</span>
         </motion.div>
